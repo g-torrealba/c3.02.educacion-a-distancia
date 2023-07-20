@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <link
+         rel="icon"
+         type="image/svg+xml"
+         href="/vite.svg" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0" />
+      <title>Vite App</title>
+      <link
+         rel="stylesheet"
+         href="style.css" />
+   </head>
+   <body>
+      <div>
+         <button id="vInstituto_btAgregar">Agregar curso</button>
+         <button id="vInstituto_btEliminar">Eliminar curso</button>
+      </div>
+      <table>
+         <thead>
+            <tr>
+               <th>Código</th>
+               <th>Monto</th>
+               <th>Inicial</th>
+               <th>Restante</th>
+               <th>Monto Cuotas</th>
+            </tr>
+         </thead>
+         <tbody id="vInstituto_rptrCursos">
+            <tr>
+               <td class="vInstituto_codigo">--</td>
+               <td class="vInstituto_monto">--</td>
+               <td class="vInstituto_inicial">--</td>
+               <td class="vInstituto_restante">--</td>
+               <td class="vInstituto_montoCuotas">--</td>
+            </tr>
+         </tbody>
+      </table>
+      <p>
+         El monto promedio de la inicial es: $
+         <span id="vInstituto_lblMontoPromedioInicial"></span>
+      </p>
+      <p>
+         Código del curso con menor cuota de pago:
+         <span id="vInstituto_lblCodigoCursoMenorCuota"></span>
+      </p>
+      <script
+         type="module"
+         src="/main.js"></script>
+   </body>
+</html>
